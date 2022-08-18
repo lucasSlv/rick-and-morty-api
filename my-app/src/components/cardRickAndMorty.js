@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { getRickAndMorty  } from "../services/rickAndMortyService";
 
 export const CardRickAndMorty = () => {
-    const [rickAndMorty, setRickAndMorty] = useState([]);
+    const [rickAndMorty, setRickAndMorty] = useState({});
     const [isLoading, setIsLoading] = useState(true);
     const [isError, setIsError] = useState(false);
     const { id } = useParams();
@@ -31,4 +31,4 @@ export const CardRickAndMorty = () => {
       }
     
       return <div>{rickAndMorty.name}</div>;
-}
+};

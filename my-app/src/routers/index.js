@@ -6,7 +6,7 @@ export const Routers = () => {
     return (
     <Routes>
         <Route path="/" element={<RickAndMorty />} />
-        <Route path="rickAndMorty/:id" element={<CardRickAndMorty />} />
+        <Route path="character/:id" element={<CardRickAndMorty />} />
     </Routes>
     );
 };
