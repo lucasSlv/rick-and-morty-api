@@ -33,9 +33,11 @@ export const CardRickAndMorty = () => {
       return (
         <ul>
           <li>
+            Name:
             {rickAndMorty.name}
           </li>
           <l1>
+            Status:
             {rickAndMorty.status}
           </l1>
         </ul>
