@@ -30,5 +30,17 @@ export const CardRickAndMorty = () => {
         return <div>Carregando...</div>;
       }
     
-      return <div>{rickAndMorty.name}</div>;
+      return (
+        <ul>
+          <li>
+            {rickAndMorty.name}
+          </li>
+          <l1>
+            {rickAndMorty.status}
+          </l1>
+        </ul>
+      )
+      
+      
+      
 };
