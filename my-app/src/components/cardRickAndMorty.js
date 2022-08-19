@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getRickAndMorty  } from "../services/rickAndMortyService";
+import './style.css';
 
 export const CardRickAndMorty = () => {
     const [rickAndMorty, setRickAndMorty] = useState({});
@@ -31,19 +32,19 @@ export const CardRickAndMorty = () => {
       }
     
       return (
-        <ul>
-          <li>
-            Name:{rickAndMorty.name}
-          </li>
-          <l1>
-            Status:{rickAndMorty.status}
-          </l1>
-          <li>
-            Origem:{rickAndMorty.origin.name}
-          </li>
-        </ul>
-      )
-      
-      
-      
+        <div className="c-card">
+          <ul>
+            <li>
+              Name:{rickAndMorty.name}
+            </li>
+            <l1>
+              Status:{rickAndMorty.status}
+            </l1>
+            <li>
+              Origem:{rickAndMorty.origin.name}
+            </li>
+          </ul>
+          <img src={rickAndMorty.image} alt={rickAndMorty.name} />
+        </div>
+      );      
 };
